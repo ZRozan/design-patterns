@@ -24,6 +24,7 @@
   <ItemGroup>
     <Folder Include="Behavioral\" />
     <Folder Include="Creational\" />
+    <Folder Include="OOP\" />
     <Folder Include="Structural\" />
   </ItemGroup>
 

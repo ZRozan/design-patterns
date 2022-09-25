@@ -5,13 +5,15 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rozan.Patterns.Creational", "src\Rozan.Patterns.Creational\Rozan.Patterns.Creational.csproj", "{24A02AA7-E006-4D0D-B83E-25290B21B21E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rozan.Patterns.Structural", "src\Rozan.Patterns.Structural\Rozan.Patterns.Structural.csproj", "{BEFE7473-6A09-4E98-9FEE-357EDC669861}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rozan.Patterns.Structural", "src\Rozan.Patterns.Structural\Rozan.Patterns.Structural.csproj", "{BEFE7473-6A09-4E98-9FEE-357EDC669861}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rozan.Patterns.Behavioral", "src\Rozan.Patterns.Behavioral\Rozan.Patterns.Behavioral.csproj", "{30F4BB7C-BD47-4847-9B77-80068371A102}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rozan.Patterns.Behavioral", "src\Rozan.Patterns.Behavioral\Rozan.Patterns.Behavioral.csproj", "{30F4BB7C-BD47-4847-9B77-80068371A102}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{551C9790-A572-4894-851D-F3AC5DD7620E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rozan.Patterns.Tests", "src\Rozan.Patterns.Tests\Rozan.Patterns.Tests.csproj", "{88CFB73B-E81E-4AEC-9638-5730E7AD30DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rozan.Patterns.Tests", "src\Rozan.Patterns.Tests\Rozan.Patterns.Tests.csproj", "{88CFB73B-E81E-4AEC-9638-5730E7AD30DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rozan.Patterns.OOP", "src\Rozan.Patterns.OOP\Rozan.Patterns.OOP.csproj", "{8372ED0C-4A24-48A5-97D3-F2CBCFF15F90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{88CFB73B-E81E-4AEC-9638-5730E7AD30DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88CFB73B-E81E-4AEC-9638-5730E7AD30DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88CFB73B-E81E-4AEC-9638-5730E7AD30DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8372ED0C-4A24-48A5-97D3-F2CBCFF15F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8372ED0C-4A24-48A5-97D3-F2CBCFF15F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8372ED0C-4A24-48A5-97D3-F2CBCFF15F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8372ED0C-4A24-48A5-97D3-F2CBCFF15F90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
