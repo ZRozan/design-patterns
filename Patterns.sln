@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{551C9790
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rozan.Patterns.Tests", "src\Rozan.Patterns.Tests\Rozan.Patterns.Tests.csproj", "{88CFB73B-E81E-4AEC-9638-5730E7AD30DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rozan.Patterns.OOP", "src\Rozan.Patterns.OOP\Rozan.Patterns.OOP.csproj", "{8372ED0C-4A24-48A5-97D3-F2CBCFF15F90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rozan.Patterns.OOP", "src\Rozan.Patterns.OOP\Rozan.Patterns.OOP.csproj", "{8372ED0C-4A24-48A5-97D3-F2CBCFF15F90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
