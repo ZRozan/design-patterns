@@ -10,17 +10,34 @@ namespace Rozan.Patterns.Tests.OOP
     public class WorkWithAnimalsTests
     {
         [Test]
-        public void PlayWithCatAndDog()
+        public void AnimalsTests()
         {
             // Arrange
-            Dog dog = new Dog();
-            Cat cat = new Cat();
+            Animal dog = new Dog();
+            Animal cat = new Cat();
+            Animal wolf = new Wolf(hierarchy: "Leader");
+
+            List<Animal> animals = new List<Animal> { dog, cat, wolf};
 
             // Act
-            dog.Name = "fido";
-            Console.WriteLine($"Dog's name is: {dog.Name}");
+            foreach (var item in animals)
+            {
+                Console.WriteLine($"The {item.GetType().Name} sound is {item.Sound}");
 
-            dog.DigHole();
+                if (item.GetType() == typeof(Dog)
+                    || item.GetType().IsSubclassOf(typeof(Dog)))
+                {
+                    Console.WriteLine("The animal also: ");
+
+                    //Dog g = (Dog)item;
+                    ((Dog)item).DigHole();
+
+                    if(item.GetType() == typeof(Wolf))
+                    {
+                        ((Wolf)item).Howl();
+                    }
+                }
+            }
 
             // Assert
             Assert.True(true);
