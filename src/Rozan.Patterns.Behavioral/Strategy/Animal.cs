@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Rozan.Patterns.Behavioral.Strategy.Interfaces;
 
-namespace Rozan.Patterns.OOP
+namespace Rozan.Patterns.Behavioral.Strategy
 {
     public class Animal
     {
@@ -12,6 +13,8 @@ namespace Rozan.Patterns.OOP
         private string _name;
         private int _weight;
         private string _sound;
+
+        public IFlys flyingType { get; set; }
 
         // Properties.
         public string Name
@@ -36,6 +39,11 @@ namespace Rozan.Patterns.OOP
         {
             get { return _sound; }
             set { _sound = value; }
+        }
+
+        public string TryToFly()
+        {
+            return flyingType.fly();
         }
     }
 }
