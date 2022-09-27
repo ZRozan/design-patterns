@@ -1,4 +1,5 @@
-﻿using Rozan.Patterns.Behavioral.Strategy.Interfaces;
+﻿using Rozan.Patterns.Behavioral.Strategy.FlyingTypes;
+using Rozan.Patterns.Behavioral.Strategy.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
