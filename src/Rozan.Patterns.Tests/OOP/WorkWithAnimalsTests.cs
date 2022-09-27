@@ -17,7 +17,7 @@ namespace Rozan.Patterns.Tests.OOP
             Animal cat = new Cat();
             Animal wolf = new Wolf(hierarchy: "Leader");
 
-            List<Animal> animals = new List<Animal> { dog, cat, wolf};
+            List<Animal> animals = new List<Animal> { dog, cat, wolf };
 
             // Act
             foreach (var item in animals)
@@ -32,7 +32,7 @@ namespace Rozan.Patterns.Tests.OOP
                     //Dog g = (Dog)item;
                     ((Dog)item).DigHole();
 
-                    if(item.GetType() == typeof(Wolf))
+                    if (item.GetType() == typeof(Wolf))
                     {
                         ((Wolf)item).Howl();
                     }
