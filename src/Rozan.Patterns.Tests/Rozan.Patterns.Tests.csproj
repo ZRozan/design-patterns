@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Creational\" />
     <Folder Include="OOP\" />
     <Folder Include="Structural\" />
   </ItemGroup>
