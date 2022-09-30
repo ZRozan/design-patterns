@@ -1,9 +1,4 @@
 ﻿using Rozan.Patterns.Creational.Singleton;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Rozan.Patterns.Tests.Creational.Singleton
 {
@@ -12,14 +7,21 @@ namespace Rozan.Patterns.Tests.Creational.Singleton
         [Test]
         public void GetTiles_RequestThreeTiles_ReturnsRandomizedThreeTiles()
         {
+            // Arrange
             int countExpected = 3;
             var instance = ScrabbleSingleton.Instance;
 
-            var result = instance.GetLetterTiles(countExpected);
-            Console.WriteLine(String.Join(", ", result));
+            // Act
+            var resultA = instance.GetLetterTiles(countExpected);
+            Console.WriteLine("First result: " + String.Join(", ", resultA));
 
-            Assert.That(result.Count, Is.EqualTo(countExpected));
-            Assert.That(instance.AllLetersInBag.Count - countExpected, Is.EqualTo(instance.Availableletters.Count));
+            var resultB = instance.GetLetterTiles(countExpected);
+            Console.WriteLine("Second result: " + String.Join(", ", resultB));
+
+            // Assert
+            Assert.That(resultA.Count, Is.EqualTo(countExpected));
+            Assert.That(resultB.Count, Is.EqualTo(countExpected));
+            Assert.That(instance.AllLetersInBag.Count - (countExpected * 2), Is.EqualTo(instance.Availableletters.Count));
         }
     }
 }

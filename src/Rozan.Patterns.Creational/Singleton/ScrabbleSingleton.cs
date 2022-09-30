@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Rozan.Patterns.Creational.Singleton
+﻿namespace Rozan.Patterns.Creational.Singleton
 {
     public class ScrabbleSingleton
     {
@@ -24,6 +18,8 @@ namespace Rozan.Patterns.Creational.Singleton
 
         private char[] _letters =
         {
+            'a', 'b', 'c', 'd', 'e', 'f', 
+            'a', 'b', 'c', 'd', 'e', 'f', 
             'a', 'b', 'c', 'd', 'e', 'f'
         };
         private List<char> _availableLetters;
@@ -50,7 +46,7 @@ namespace Rozan.Patterns.Creational.Singleton
         {
             var tilesToSend = new List<char>();
 
-            while(tilesToSend.Count < numberOfTiles)
+            while (tilesToSend.Count < numberOfTiles)
             {
                 var indexToPick = Random.Shared.Next(_availableLetters.Count);
                 tilesToSend.Add(_availableLetters[indexToPick]);
